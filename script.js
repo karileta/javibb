@@ -1,0 +1,1 @@
+document.getElementById('revealMessage').addEventListener

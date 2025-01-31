@@ -1,0 +1,81 @@
+body {
+    background-color: #ffcccb;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    padding: 50px;
+}
+
+h1 {
+    color: #d50000;
+}
+
+.flowers {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.flower {
+    width: 50px;
+    height: 50px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    margin: 0 10px;
+    animation: bloom 1s infinite alternate;
+}
+
+@keyframes bloom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.ghostface {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://i.etsystatic.com/35559813/r/il/99e51a/4212977608/il_fullxfull.4212977608_hylt.jpg'); 
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: float 3s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #d50000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #b00000;
+}
